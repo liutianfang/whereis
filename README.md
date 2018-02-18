@@ -45,7 +45,7 @@ Action corresponds to a number of key words, key words of action "place to" is "
 The main variables are the item name and location.
 
 
-## totype function
+## demo function
 1. Use keywords to identify action
 2. delete modal particle in Chinese
 3. Chinese / English basic variable identification
