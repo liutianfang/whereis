@@ -1,0 +1,25 @@
+{
+  "request": {
+    "dialogState": "STARTED",
+    "intent": {
+      "name": "Alpha.CancelIntent"
+    },
+    "requestId": "370e51dd-ad75-4aef-a594-5bdb6691d76e_660_test",
+    "timestamp": 1531363931848,
+    "type": "IntentRequest"
+  },
+  "session": {
+    "application": {
+      "applicationId": "jd.alpha.skill.3ed0f131359e4b15970145d83c5a2e69"
+    },
+    "device": {
+      "deviceId": "deviceId_1c6a117f82584ce784eadf2ada421420_dev_test"
+    },
+    "isNew": true,
+    "sessionId": "2c1ce414-9e42-4b8a-b93e-e2de6427f0af",
+    "user": {
+      "userId": "jd.account.229dbead1482cb9e0b3d9ba206034084"
+    }
+  },
+  "version": "1.0"
+}
