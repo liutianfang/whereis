@@ -35,14 +35,16 @@ def index(request):
             logger.info("POST  except= " +str(Exception ))
             pass
     else:
+	
+	# GET process
         response.shouldEndSession = True
         response.intent = "exit"
         response.response["output"] = {"type": "PlainText", "text": EXIT_MSG}
 
         log.response = json.dumps(response.toJson(), ensure_ascii=False)
         log.save()
-        return JsonResponse(exit(),safe=False,json_dumps_params={"ensure_ascii":False})
-        # return HttpResponse(json.dumps(exit(),ensure_ascii=False),  content_type="application/json")
+        return JsonResponse(exit(),safe=False)
+ 
 
         # dispatch
     logger.info("intent= "+intent)
@@ -57,10 +59,9 @@ def index(request):
 
     log.response=json.dumps(response.toJson(),ensure_ascii= False)
     log.save()
-    return JsonResponse(response.toJson(), safe=False, json_dumps_params={"ensure_ascii": False})
+    return JsonResponse(response.toJson(), safe=False)
 
 def launchRequest(response, requestVar={} ):
-    response.intent = "help"
     response.response["output"] = {"type": "PlainText", "text": HELP_MSG}
 
     return
