@@ -12,7 +12,7 @@ def post(fname='IntentRequest-cancel.json', url='http://127.0.0.1:8000/jdAlpha/w
     str= file.read()
     file.close()
     r = requests.post(url,headers=headers, data=str)
-    print(r.text)
+    print(r.text.encode('utf-8').decode('unicode_escape'))
 
 if __name__ == '__main__':
     post()
