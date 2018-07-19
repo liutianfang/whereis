@@ -1,10 +1,1 @@
-#这个是为jd-alpha开发的框架草稿，基于django。
 
-whereis.top是我的whereis语音应用的服务网站。whereisdottop是网站的主模块，whereisjd是针对京东alpha服务的处理模块。
-whereisjd模块提供了两种日志，一种是文件日志，用本地开发，需要在whereisdottop中的setting.py中配置。一种是数据库记录的日志，记录了IP/Header，请求和响应报文，可以方便的在线调试。
-
-jdtestClient是测试代码，将来自alpha的jsdon请求保存为文件，设置请求地址，然后执行即可看到服务返回结果
-
-whereisjd中的views.py的index函数是服务入口，包含了请求解析，分发，帮助和退出功能已经实现。其中还有文件日志和数据库日志，返回对象response及json生成的功能已经调试通过。
-
-这个是我自己用两天完成的开发框架，很初级，代码也不规范，仅仅供参考。
