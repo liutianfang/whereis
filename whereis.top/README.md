@@ -8,7 +8,7 @@
   2. 面向开发过程的调试支持，使用django自带orm框架，简单快速的实现了数据库日志；
   3. 测试方案及代码
 
-目前项目对京东alpha平台的开发者是可用的，需要开发者自己查询django使用文档，服务器部署可用使用wscgi+nginx方案，配置nginx实现https服务
+目前项目对京东alpha平台的开发者是可用的，需要开发者自己查询django使用文档，服务器部署可用使用uwsgi+nginx方案，配置nginx实现https服务
 
 
 
